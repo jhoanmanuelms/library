@@ -1,0 +1,21 @@
+{
+  "name": "library",
+  "description": "A test project to learn NodeJS",
+  "main": "app.js",
+  "authors": [
+    "Jhoan Manuel Muñoz Serrano <jhoanmanuelms@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jhoanmanuelms/library",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
