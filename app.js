@@ -3,10 +3,11 @@ const app = express();
 const port = 5000;
 
 app.use(express.static('public'));
-app.use(express.static('src/views'));
+app.set('views', 'src/views');
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-  res.send('hello world');
+  res.render('index', {title: 'Hello from EJS', list:['a', 'b', 'c', 'd']});
 });
 
 app.get('/books', (req, res) => {
